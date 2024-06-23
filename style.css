@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root { /*variaveis que serao aplicadas em todo o site:*/
+
+
+
+    --cor0: #292522;
+    --cor1: #4d6160;
+    --cor2: #a39081;
+    --cor3: #d6a692;
+    --cor4: #efd9b4;
+
+    --fonte-padrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /*da Efeito de rolagem suave ao clicar nas opcoes de navegacoes*/
+}
+
+body {
+    background-color: white;
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    display: flex;  
+    background-color: var(--cor1);
+}
+
+#logo {
+    width: 170px;
+    height: 100px;
+}
+
+
+#logo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+nav {
+    background-color: var(--cor1);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;  
+    align-items: center;  
+}
+
+.nav_itens {
+    display: flex;
+    list-style: none;        
+}
+
+.nav_itens li {
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.0em;
+}
+
+nav ul li a:hover {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s all:
+}
+
+main {
+    background-color: var(--cor0);
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    color: white;
+}
+
+main h1 {
+    font-size: 16em;
+}
+
+main h2 {
+    text-transform: uppercase;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+
+section {
+    font-family: var(--fonte-padrao);
+}
+
+section.max0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--cor2);
+    padding-bottom: 10vh;
+    color: white;
+    height: 350px;
+    font-size: 1.2em;
+}
+
+.max0 p {
+    color: #fff;
+    text-align: justify;
+    margin-top: 60px;
+    font-size: 1.0em;
+    margin-right: 10px;
+}
+
+.sinopse img {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 45vw;
+    height: 330px;
+}
+
+.top {
+    background-color: var(--cor0);
+    color: white;
+    padding: 10px;    
+}
+
+.flex1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
+    align-items: center;
+    padding: 20px;    
+}
+
+.flex2 p {
+    line-height: 30px;
+    font-weight: bolder500px;
+}
+
+section#max1 img {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 45vw;
+    height: 330px;
+}
+
+section#max2 img {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 45vw;
+    height: 330px;
+}
+
+section#max3 img {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 45vw;
+    height: 330px;
+}
+
+section#max4 img {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 45vw;
+    height: 330px;
+}
+
+section#max5 img {
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 45vw;
+    height: 330px;
+}
+
+a.botao {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--cor1);
+    width: fit-content; /*a largura se adapta ao conteudo*/
+    padding: 15px 40px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+footer {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor0);
+    height: 60px;
+}
+
+footer a  {
+    text-decoration: none;
+    color: white;
+}
+
+footer p {
+    margin-top: 0px;
+    text-align: center;
+    padding: 20px; 
+    color: white;    
+}
+
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
